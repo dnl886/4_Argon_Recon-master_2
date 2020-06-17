@@ -9,6 +9,7 @@ public class Enemies : MonoBehaviour
     [SerializeField] Transform parent;
 
     [SerializeField] int scorePerHit = 12;
+    [SerializeField] int Hits = 10;
 
     ScoreBoard scoreBoard;
     void Start()
@@ -26,7 +27,21 @@ public class Enemies : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        ProcessHit();
+        if (Hits <= 1)
+        {
+            KillEnemy();
+        }
+    }
+
+    void ProcessHit()
+    {
         scoreBoard.scoreHit(scorePerHit);
+        Hits = Hits - 1; // or Hits--;
+    }
+
+    void KillEnemy()
+    {
         GameObject fx = Instantiate(DeathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
         Destroy(gameObject);
