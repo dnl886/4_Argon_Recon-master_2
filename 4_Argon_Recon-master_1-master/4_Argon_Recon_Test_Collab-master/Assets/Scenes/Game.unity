@@ -1374,6 +1374,25 @@ MonoBehaviour:
   parent: {fileID: 475660278}
   scorePerHit: 12
   Hits: 10
+--- !u!95 &1602936623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602936621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b8107b4eefc01445a3b7706f55aa8c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1653687319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +1814,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 928819933553944695, guid: 1c4ce15ce5b187341b64edee16ca6bfe,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187246737113403193, guid: 1c4ce15ce5b187341b64edee16ca6bfe,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
     - target: {fileID: 928819932645076457, guid: 1c4ce15ce5b187341b64edee16ca6bfe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1864,11 +1893,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Death FX
       objectReference: {fileID: 0}
-    - target: {fileID: 928819933553944695, guid: 1c4ce15ce5b187341b64edee16ca6bfe,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun Left
-      objectReference: {fileID: 0}
     - target: {fileID: 928819933652220751, guid: 1c4ce15ce5b187341b64edee16ca6bfe,
         type: 3}
       propertyPath: guns.Array.size
@@ -1884,11 +1908,6 @@ PrefabInstance:
       propertyPath: guns.Array.data[1]
       value: 
       objectReference: {fileID: 1905509739}
-    - target: {fileID: 8187246737113403193, guid: 1c4ce15ce5b187341b64edee16ca6bfe,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun Right
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c4ce15ce5b187341b64edee16ca6bfe, type: 3}
 --- !u!1001 &1730046060039801751
@@ -2099,7 +2118,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
       propertyPath: m_Name
-      value: Ship_03 (1)
+      value: Falcon (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
       propertyPath: m_TagString
