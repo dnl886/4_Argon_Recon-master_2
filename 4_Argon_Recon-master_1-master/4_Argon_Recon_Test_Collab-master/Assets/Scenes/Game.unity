@@ -1468,13 +1468,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623336872}
-  m_LocalRotation: {x: 0.20430145, y: -0.22502542, z: 0.04831797, w: 0.9514672}
-  m_LocalPosition: {x: 178.4, y: 17.8, z: 110.7}
-  m_LocalScale: {x: 47.15801, y: 7.7808, z: 5.929}
+  m_LocalRotation: {x: 0.08319975, y: 0.99247575, z: 0.03385874, w: 0.083206765}
+  m_LocalPosition: {x: 223.8, y: -2.0999985, z: 191.8}
+  m_LocalScale: {x: 78.68647, y: 10.582666, z: 8.064033}
   m_Children: []
   m_Father: {fileID: 1559360008}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -3.0590003, y: -189.84799, z: 9.847}
 --- !u!65 &1623336874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2137,6 +2137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacles
       objectReference: {fileID: 0}
+    - target: {fileID: 1730046061007539754, guid: 46bd8a55d471c414daa10c6d6dcb851c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1730046061007539798, guid: 46bd8a55d471c414daa10c6d6dcb851c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2477,6 +2482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: obstacles
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280318896998201366, guid: f0045379bd45e8048bedfeb6a2770779,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6280318896998201450, guid: f0045379bd45e8048bedfeb6a2770779,
         type: 3}
