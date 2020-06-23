@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -20;
     [SerializeField] float controlRollFactor = -20;
 
+
     float xThrow, yThrow;
     bool isControllerEnabled;
 
@@ -91,27 +92,22 @@ public class PlayerController : MonoBehaviour
     {
         if (CrossPlatformInputManager.GetButton("fire"))
         {
-            ActivateGuns();
+            SetGunsActive(true);
         }
         else
         {
-            DeactivateGuns();
+            SetGunsActive(false);
         }
     }
 
-    void ActivateGuns()
+    void SetGunsActive(bool isActive)
     {
-        foreach(GameObject gun in guns)
+        foreach (GameObject gun in guns) //care may affect Death FX
         {
-            gun.SetActive(true);
+            var emmisionModule = gun.GetComponent<ParticleSystem>().emission;
+            emmisionModule.enabled = isActive;
         }
     }
 
-    void DeactivateGuns()
-    {
-        foreach(GameObject gun in guns)
-        {
-            gun.SetActive(false);
-        }
-    }
+    
 }
